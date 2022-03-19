@@ -1,20 +1,30 @@
 Arguments: 
-  C:\Program Files (x86)\nodejs\node.exe C:\Users\Gabriel\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add intl
+  /usr/local/bin/node /usr/local/bin/yarn add react-native-svg-tranformer
 
 PATH: 
-  C:\Program Files (x86)\Embarcadero\Studio\20.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\20.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Bpl\Win64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\php;C:\Program Files\Git\cmd;C:\Program Files (x86)\nodejs\;C:\Users\Gabriel\AppData\Local\Android\Sdk\platform-tools\adb;C:\Program Files\Java;C:\Users\Gabriel\AppData\Local\Android\Sdk\platform-tools;C:\Users\Gabriel\AppData\Local\Android\Sdk\emulator;C:\Users\Gabriel\AppData\Local\Android\Sdk\build-tools;C:\Users\Gabriel\AppData\Local\Microsoft\WindowsApps;C:\Users\Gabriel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Gabriel\AppData\Local\GitHubDesktop\bin;C:\Users\Gabriel\AppData\Roaming\npm
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 Yarn version: 
-  1.22.10
+  1.22.17
 
 Node version: 
-  14.17.0
+  16.13.1
 
 Platform: 
-  win32 ia32
+  darwin x64
 
 Trace: 
-  Error: EPERM: operation not permitted, copyfile 'C:\Users\Gabriel\AppData\Local\Yarn\Cache\v6\npm-regexpu-core-4.7.1-2dea5a9a07233298fbf0db91fa9abc4c6e0f8ad6-integrity\node_modules\regexpu-core\package.json' -> 'C:\Users\Gabriel\OneDrive\Escritorio\RocketSeat\Ignite\SegundoModulo\gofinances\node_modules\regexpu-core\package.json'
+  Error: https://registry.yarnpkg.com/react-native-svg-tranformer: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
@@ -37,6 +47,7 @@ npm manifest:
       "expo-app-loading": "^1.1.2",
       "expo-font": "^9.2.1",
       "expo-status-bar": "~1.0.4",
+      "intl": "^1.2.5",
       "react": "16.13.1",
       "react-dom": "16.13.1",
       "react-hook-form": "^7.16.1",
@@ -3762,6 +3773,11 @@ Lockfile:
       string-width "^2.1.0"
       strip-ansi "^4.0.0"
       through "^2.3.6"
+  
+  intl@^1.2.5:
+    version "1.2.5"
+    resolved "https://registry.yarnpkg.com/intl/-/intl-1.2.5.tgz#82244a2190c4e419f8371f5aa34daa3420e2abde"
+    integrity sha1-giRKIZDE5Bn4Nx9ao02qNCDiq94=
   
   invariant@^2.2.2, invariant@^2.2.4:
     version "2.2.4"
